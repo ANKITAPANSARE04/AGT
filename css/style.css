@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body,
+button,
+input,
+select,
+textarea {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    background-color: #fcfcfc;
+}
+
+body {
+    overflow-x:hidden;
+    color: #052c56;
+} 
+:root {
+    --colorLight: #ffffff;
+    --colorLightRGB: 255, 255, 255;
+    --colorFont: #6f4518;
+    --colorFontMuted: #d4a276;
+    --colorBackground: #fff7f4;
+    --colorBorder: #f3d5b5;
+    --colorDark: #6f4518;
+    --colorDarkMuted: #583101;
+    --colorMain: #d69704;
+    --colorMain2: #d6a739;
+    --colorMain3: #d35704;
+    --colorMain4: #c68400;
+    --btn-fs: 14px;
+    --socialGap: 1em;
+    --wli-my: 1.25em;
+    --sb-gap: 5rem;
+    --sideNavWidth: 290px;
+    --sideNavPX: 20px;
+    --mobileNavWidth: 340px;
+    --mobileNavPX: 40px;
+    --sfixWidth: 320px;
+    --sfixPX: 30px;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+  }
+    ::-webkit-scrollbar-track {
+    background: #ebebeb; 
+  }
+    ::-webkit-scrollbar-thumb {
+    background: #8e8e8e; 
+      border-radius:10px;
+  }
+  ::-webkit-scrollbar-thumb:hover {    
+    background: #5e5e5e; 
+  }
+
+  /* iframe{display: none !important;}  */
+  #google_translate_element{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+    height: 28px;
+    overflow: hidden;
+
+  }
+.header-logo img {
+    width: 100%;
+}
+
+nav a {
+    color: #0C3561 !important;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #1b6ec7 !important;
+}
+
+.text-yellow {
+    color: #ffcc00;
+} 
+.btn-yellow {
+    background-color: #ffcc00;
+    padding: 5px 10px;
+    color: black;
+    border-radius: 8px;
+}
+
+.blue-bg-secondary {
+    background-color: #0C3561;
+    padding: 20px;
+    text-align: center;
+    color: white;
+} 
+.text-aqua {
+    color: #41ffff;
+}
+
+.glass-card {
+    border: 2px solid white;
+    border-radius: 16px;
+    padding: 15px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, .1);
+}
+
+.screen-simple-details,
+.screen-colored-details {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.screen-img,
+.screen-details {
+    width: 40%;
+    margin: auto;
+}
+.screen-details h6{font-size: 22px;font-weight: bold;}
+.read-more-btn {
+    border: 2px solid #0C3561;
+    color: #0C3561;
+    padding: 5px 15px;
+    border-radius: 35px;
+    margin: 15px 0;
+}
+
+.screen-colored-details {
+    background-color: #f9f9f9;
+}
+
+.green-btn {
+    background-color: #33ae64 !important;
+}
+
+.purple-btn,
+.green-btn {
+    background-color: #423d9b;
+    padding: 7px 20px;
+    border: none;
+    border-radius: 8px;
+    margin: 15px;
+    color: white;
+}
+
+.network-bg {
+    background-image: url('../images/pseudobg-network.png');
+    margin: 20px 0;
+}
+
+.bg-light.text-center {
+    border-radius: 8px;
+    height: 90%;
+    margin: 15px 0;box-shadow: rgba(56, 56, 56, 0.5) 0px 5px 15px;
+}
+
+/* nav.navbar { */
+    .top-navigation{
+    text-align: -webkit-center !important;
+    margin-top: 10px;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    text-align: center;
+    width: 100%;
+    /* margin: 2px 10px; */
+}
+nav.navbar {width: 98%;
+    border-radius:20px;
+    background-color: rgb(251, 252, 254);
+    border: 1px solid white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;}
+.navbar .nav-link.active {
+    color: #f15656 !important;
+    text-decoration: underline;
+}
+#carouselExampleFade, #carouselExampleFade img{height: 100vh;}
+.service-cards {
+    background-color: #f6fafe;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 25px;
+    text-align: center;
+    
+    height: 100%;
+}
+.black-white-bg{background-image: url('../images/black-white-bg.png');background-size: cover;;}
+.service-cards img{width: 35%;} .service-cards p{font-size: 14px;}
+footer{background-color: #0c3561;color:#f3f9ff !important;}
+.ppt-img{  height: auto; border-radius: 12%;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;}
+@media only screen and (max-width: 992px) {
+
+    .screen-img,
+    .screen-details {
+        width: 80%;
+    }
+
+    .screen-simple-details,
+    .screen-colored-details {
+        display: block;
+    }
+}

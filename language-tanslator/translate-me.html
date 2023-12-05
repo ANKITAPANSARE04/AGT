@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #google_translate_element{
+  display: none;
+}
+    </style>
+</head>
+<body>
+    <h1>My Web Page</h1>
+<p>Hello everybody!</p>
+<p>Translate this page:</p>
+<div id="google_translate_element"></div>
+<script type="text/javascript">
+   function googleTranslateElementInit() {
+       new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+   }
+</script>
+<script type="text/javascript"
+   src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<p>You can translate the content of this page by selecting a language in the select box. i love you</p>
+<div class="flag">
+   <a href="#" class="flag_link eng" data-lang="en">English<img class="img-fluid" src="./img/flag-eng.png" alt=""></a>
+   <a href="#" class="flag_link taj" data-lang="es">Spanish<img class="img-fluid" src="./img/flag-taj.png" alt=""></a>
+   <a href="#" class="flag_link rus" data-lang="de">Germany<img class="img-fluid" src="./img/flag-rus.png" alt=""></a>
+   <a href="#" class="flag_link rus" data-lang="fr">French<img class="img-fluid" src="./img/flag-rus.png" alt=""></a>
+   <a href="#" class="flag_link rus" data-lang="ar">Arebic<img class="img-fluid" src="./img/flag-rus.png" alt=""></a>
+</div>
+
+
+<script>
+    var flags = document.getElementsByClassName('flag_link');
+
+
+Array.prototype.forEach.call(flags, function(e){
+  e.addEventListener('click', function(){
+    var lang = e.getAttribute('data-lang'); 
+    var languageSelect = document.querySelector("select.goog-te-combo");
+    languageSelect.value = lang; 
+    languageSelect.dispatchEvent(new Event("change"));
+  }); 
+});
+</script>
+</body>
+</html>
